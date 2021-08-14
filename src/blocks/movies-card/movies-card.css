@@ -1,0 +1,22 @@
+@import url(./__image/movies-card__image.css);
+@import url(./__title/movies-card__title.css);
+@import url(./__heart-button/movies-card__heart-button.css);
+@import url(./__heart-button/_type/movies-card__heart-button_type_pushed.css);
+@import url(./__heart-button/_type/movies-card__heart-button_type_unpushed.css);
+@import url(./__heart-button/_type/movies-card__heart-button_type_none.css);
+@import url(./__duration/movies-card__duration.css);
+
+.movies-card {
+    margin: 0;
+    padding: 0;
+
+    background-color: #222;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+
+    cursor: pointer;
+}

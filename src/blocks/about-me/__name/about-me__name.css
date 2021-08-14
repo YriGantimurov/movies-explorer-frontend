@@ -1,0 +1,22 @@
+.about-me__name {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me__name {
+        line-height: 36px;
+        font-size: 30px;
+
+        margin-top: 40px;
+    }
+}

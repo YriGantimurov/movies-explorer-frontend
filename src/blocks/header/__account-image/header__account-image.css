@@ -1,0 +1,14 @@
+.header__account-image {
+    width: 12px;
+    height: 14px;
+
+    margin: 0 7px 0 0;
+
+    background-image: url(../../../images/account-image.png);
+
+    transition: opacity .3s linear;
+}
+
+.header__menu-button_value_account:hover .header__account-image {
+    opacity: .6;
+}

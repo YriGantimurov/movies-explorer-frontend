@@ -1,0 +1,11 @@
+.header__menu-button_value_signin-button {
+    background-color: #3ddc84;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 20px;
+    color: #000;
+  }
+
+.header__menu-button_value_signin-button:hover {
+  opacity: 1;
+}

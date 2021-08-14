@@ -1,0 +1,19 @@
+.search-form__paragraph {
+    display: inline;
+    color: #fff;
+
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+
+    margin: 0 0 0 47px;
+    padding: 0;
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    cursor: pointer;
+}

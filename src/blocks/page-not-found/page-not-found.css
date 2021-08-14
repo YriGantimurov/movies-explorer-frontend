@@ -1,0 +1,12 @@
+@import url(./__title/page-not-found__title.css);
+@import url(./__paragraph/page-not-found__paragraph.css);
+@import url(./__container/page-not-found__container.css);
+@import url(./__go-back-button/page-not-found__go-back-button.css);
+
+.page-not-found {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}

@@ -1,0 +1,19 @@
+@import url(./__grid-container/about-me__grid-container.css);
+@import url(./__portrait/about-me__portrait.css);
+@import url(./__container/about-me__container.css);
+@import url(./__social-network-container/about-me__social-network-container.css);
+@import url(./__name/about-me__name.css);
+@import url(./__about-me/about-me__about-me.css);
+@import url(./__biography/about-me__biography.css);
+@import url(./__social-networlk/about-me__social-network.css);
+
+.about-me {
+    margin: 0;
+    padding: 0 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        padding: 0 14px;
+    }
+}

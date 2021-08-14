@@ -1,0 +1,14 @@
+.movies-card__duration {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #8b8b8b;
+
+    margin: 0 0 16px 16px;
+    padding: 0;
+}

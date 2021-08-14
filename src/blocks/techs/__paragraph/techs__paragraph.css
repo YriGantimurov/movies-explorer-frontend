@@ -1,0 +1,19 @@
+.techs__paragraph {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    color: #fff;
+    margin: 26px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .techs__paragraph {
+        line-height: 16px;
+        font-size: 11px;
+    }
+}

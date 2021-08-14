@@ -1,0 +1,13 @@
+.identification__error-massage {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #ee3465;
+
+    visibility: hidden;
+}

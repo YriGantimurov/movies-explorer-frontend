@@ -1,0 +1,28 @@
+.header__menu-button {
+  font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: right;
+
+  text-decoration: none;
+
+  margin: 0 30px 0 0;
+  padding: 0;
+  color: #ffffff;
+  border: none;
+
+  transition: opacity .3s linear, color .3s linear;
+
+  cursor: pointer;
+}
+  
+.header__menu-button:last-of-type {
+  margin-right: 0;
+}
+  
+.header__menu-button:hover {
+  opacity: .6;
+}

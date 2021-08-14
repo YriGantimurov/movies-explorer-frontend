@@ -1,0 +1,20 @@
+.about-me__biography {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #fff;
+    margin: 26px 0 20px 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me__biography {
+        line-height: 16px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,9 @@
+.search-form__thumbler {
+    margin: 41px 0 0 0;
+    padding: 0 0 40px 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid #424242;
+}

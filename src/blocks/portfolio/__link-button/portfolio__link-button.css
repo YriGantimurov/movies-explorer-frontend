@@ -1,0 +1,23 @@
+.portfolio__link-button {
+    background-color: transparent;
+    background-image: url(../../../images/linkPicture.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    width: 27px;
+    height: 27px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.portfolio__link-button:hover {
+    opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__link-button {
+        width: 18px;
+        height: 18px;
+    }
+}

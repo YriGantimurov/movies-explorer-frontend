@@ -1,0 +1,36 @@
+@import url(./__more-button/more-button__more-button.css);
+@import url(./_type/more-button_type_none.css);
+
+.more-button {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    cursor: pointer;
+    color: #fff;
+    width: 320px;
+    padding: 11px 0 9px;
+    display: block;
+    margin: 50px auto 80px;
+
+    background-color: transparent;
+    border: 1px solid #424242;
+    border-radius: 10px;
+
+    transition: color .3s linear;
+}
+
+.more-button:hover {
+    color: #909090;
+}
+
+
+@media screen and (max-width: 768px) {
+    .more-button {
+        width: 240px;
+    }
+}

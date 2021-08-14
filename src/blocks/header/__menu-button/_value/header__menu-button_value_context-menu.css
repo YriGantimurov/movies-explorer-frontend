@@ -1,0 +1,8 @@
+.header__menu-button_value_context-menu {
+    width: 44px;
+    height: 44px;
+
+    background-image: url(../../../../images/context-menu-button.png);
+    border: none;
+    background-color: transparent;
+}

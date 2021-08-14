@@ -1,0 +1,14 @@
+.header__menu-button_value_account {
+    line-height: 16px;
+
+    border: 2px solid #3c3c3c;
+    padding: 5px 12px;
+
+    border-radius: 50px;
+    display: flex;
+}
+
+.header__menu-button_value_account:hover {
+    opacity: 1;
+    color: #909090;
+}

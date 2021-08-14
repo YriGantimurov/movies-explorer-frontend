@@ -1,0 +1,15 @@
+.about-me__grid-container {
+    margin: 66px 0 0 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: minmax(50px, 600px) minmax(100px, 270px);
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me__grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

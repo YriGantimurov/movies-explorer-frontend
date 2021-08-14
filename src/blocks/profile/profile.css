@@ -1,0 +1,18 @@
+@import url(./__title/profile__title.css);
+@import url(./__data/profile__data.css);
+@import url(./__settings/profile__settings.css);
+@import url(./__data-option/profile__data-option.css);
+@import url(./__data-value/profile__data-value.css);
+@import url(./__sign-out-button/profile__sign-out-button.css);
+@import url(./__edit-button/profile__edit-button.css);
+
+.profile {
+    margin: 0;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 600px) 1fr;
+    grid-template-rows: max-content max-content max-content;
+
+    height: calc(100vh - 75px);
+}

@@ -1,0 +1,12 @@
+.about-project__article {
+    margin: 0;
+}
+
+@media screen and (max-width: 587px) {
+    .about-project__article {
+        margin: 56px 0 0 0;
+    }
+    .about-project__article:first-of-type {
+        margin-top: 0;
+    }
+}

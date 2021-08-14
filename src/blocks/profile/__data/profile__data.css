@@ -1,0 +1,20 @@
+.profile__data {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    grid-column: 2/3;
+    border-top: #424242 1px solid;
+    display: flex;
+}
+
+.profile__data:first-of-type {
+    margin: 75px 0 0 0;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .profile__data:first-of-type {
+        margin: 80px 0 0 0;
+    }
+}

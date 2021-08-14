@@ -1,0 +1,20 @@
+.techs__title {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    
+    color: #fff;
+    margin: 90px 0 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .techs__title {
+        line-height: 36px;
+        font-size: 30px;
+    }
+}

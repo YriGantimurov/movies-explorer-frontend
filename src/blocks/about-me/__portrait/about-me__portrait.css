@@ -1,0 +1,9 @@
+.about-me__portrait {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 10px;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+}

@@ -1,0 +1,18 @@
+.search-form__checkbox-container {
+    margin: 0;
+    padding: 0;
+
+    width: 36px;
+    height: 20px;
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    border-radius: 20px;
+    background-color: #2f2f2f;
+    z-index: 0;
+
+    cursor: pointer;
+
+    transition: background-color .3s ease-out;
+}
