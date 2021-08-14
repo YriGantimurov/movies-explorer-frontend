@@ -23,13 +23,13 @@ function SignUp() {
             <h2 className="identification__title">Добро пожаловать!</h2>
             <form id="identification__sign-up-form" className="identification__form" onSubmit={(e) => { e.preventDefault(); history.push('/signin') }}>
                 <p className="identification__input-title">Имя</p>
-                <input onChange={(e)=> handleIsValid(e)} className="identification__input" type="text" required  minLength="3" maxLength="20"/>
+                <input placeholder="Имя" onChange={(e)=> handleIsValid(e)} className="identification__input" type="text" required  minLength="3" maxLength="20"/>
                 <p className="identification__error-massage">Что-то пошло не так...</p>
                 <p className="identification__input-title">E-mail</p>
-                <input onChange={(e)=> handleIsValid(e)} className="identification__input" type="email" required />
+                <input placeholder="E-mail" onChange={(e)=> handleIsValid(e)} className="identification__input" type="email" required />
                 <p className="identification__error-massage">Что-то пошло не так...</p>
                 <p className="identification__input-title">Пароль</p>
-                <input onChange={(e)=> handleIsValid(e)} className="identification__input" type="password" minLength="8" maxLength="20" required />
+                <input placeholder="Пароль" onChange={(e)=> handleIsValid(e)} className="identification__input" type="password" minLength="8" maxLength="20" required />
                 <p className="identification__error-massage">Что-то пошло не так...</p>
             </form>
             <figure className="identification__sign-in">
