@@ -5,6 +5,7 @@
 @import url(./__heart-button/_type/movies-card__heart-button_type_unpushed.css);
 @import url(./__heart-button/_type/movies-card__heart-button_type_none.css);
 @import url(./__duration/movies-card__duration.css);
+@import url(./__delete-button/movies-card__delete-button.css);
 
 .movies-card {
     margin: 0;

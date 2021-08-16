@@ -19,6 +19,10 @@ function MoviesCard(props) {
         <li className="movies-card" key={props.i}>
             <img alt="Обложка фильма" src={props.card.image} className="movies-card__image"/>
             <p className="movies-card__title">{props.card.title}</p>
+            {location.pathname === '/saved-movies'
+            ? <button className="movies-card__delete-button" ></button>
+            : <button onClick={() => toggleHeartClass()} className={`movies-card__heart-button ${isPushed}`} ></button>
+        }
             <button onClick={() => toggleHeartClass()} className={`movies-card__heart-button ${location.pathname === '/saved-movies'? 'movies-card__heart-button_type_none': isPushed}`} ></button>
             <p className="movies-card__duration">{handleDurationCalc()}</p>
         </li>

@@ -5,6 +5,8 @@
     display: grid;
     grid-template-columns: minmax(50px, 600px) minmax(100px, 270px);
     justify-content: space-between;
+
+    column-gap: 50px;
 }
 
 @media screen and (max-width: 768px) {
