@@ -1,0 +1,13 @@
+.footer__paragraph {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+  
+    color: #8b8b8b;
+    margin: 0;
+    padding: 0;
+  }

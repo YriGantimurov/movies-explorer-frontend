@@ -1,0 +1,27 @@
+@import url(./__submit-button/identification__submit-button.css);
+@import url(./__logo/identification__logo.css);
+@import url(./__title/identification__title.css);
+@import url(./__form/identification__form.css);
+@import url(./__sign-in/identification__sign-in.css);
+@import url(./__paragraph/identification__paragraph.css);
+@import url(./__sign-in-button/identification__sign-in-button.css);
+@import url(./__input/identification__input.css);
+@import url(./__input-title/identification__input-title.css);
+@import url(./__input/_type/identification__input_type_error.css);
+@import url(./__error-message/identification__error-massage.css);
+@import url(./__error-message/_type/identification__error-massage_type_error.css);
+
+.identification {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(200px,400px) 1fr;
+    grid-template-rows: min-content min-content min-content;
+}
+
+@media screen and (max-width: 768px) {
+    .identification {
+        justify-items: center;
+
+        padding: 0 30px;
+    }
+}

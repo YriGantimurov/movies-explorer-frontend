@@ -1,0 +1,17 @@
+.techs__technology {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    padding: 20px 0;
+    border-radius: 10px;
+
+    background-color: #303030;
+    text-align: center;
+    display: inline;
+    color: #fff;
+}

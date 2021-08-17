@@ -1,0 +1,35 @@
+.promo__nav-button {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+
+    margin: 0 10px 0 0;
+    width: 96px;
+    color: #ffffff;
+    border: none;
+    background: #303030;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+
+    transition: color .3s linear;
+
+    cursor: pointer;
+}
+
+.promo__nav-button:hover {
+    color: #838383;
+}
+
+.promo__nav-button:last-of-type {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .promo__nav-button {
+        width: 82px;
+    }
+}

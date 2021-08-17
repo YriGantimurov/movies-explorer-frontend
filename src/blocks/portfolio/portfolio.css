@@ -1,0 +1,15 @@
+@import url(./__link-name/portfolio__link-name.css);
+@import url(./__link-button/portfolio__link-button.css);
+@import url(./__title/portfolio__title.css);
+@import url(./__link/portfolio__link.css);
+
+.portfolio {
+    padding: 0 70px;
+    margin: 0 0 90px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        padding: 0 14px;
+    }
+}

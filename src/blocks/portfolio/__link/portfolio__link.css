@@ -1,0 +1,23 @@
+.portfolio__link {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+    padding: 0 0 19px 0;
+
+    transition: opacity .3s linear;
+    cursor: pointer;
+}
+
+.portfolio__link:hover {
+    opacity: .6;
+}
+
+.portfolio__link:first-of-type {
+    margin-top: 0;
+}
+
+.portfolio__link:last-of-type {
+    border-bottom: none;
+}

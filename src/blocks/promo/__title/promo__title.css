@@ -1,0 +1,21 @@
+.promo__title {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    text-align: center;
+
+    color: #fff;
+    margin: 0;
+
+    max-width: 680px;
+}
+
+@media screen and (max-width: 768px) {
+    .promo__title {
+        font-size: 29px;
+        line-height: 37px;
+    }
+}

@@ -1,0 +1,15 @@
+.identification__logo {
+    cursor: pointer;
+
+    width: 38px;
+    grid-column: 2/3;
+
+    margin: 70px 0 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .identification__logo {
+        margin: 56px 0 0 0;
+    }
+}

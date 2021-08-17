@@ -1,0 +1,22 @@
+.portfolio__link-name {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.04em;
+    text-align: left;
+
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    display: inline;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__link-name {
+        line-height: 28px;
+        font-size: 18px;
+    }
+}

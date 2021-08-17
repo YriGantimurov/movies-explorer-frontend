@@ -1,0 +1,15 @@
+.profile__data-option {
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    color: #fff;
+    display: inline;
+
+    margin: 16px auto 16px 0;
+    padding: 0;
+}

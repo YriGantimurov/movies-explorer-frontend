@@ -1,0 +1,23 @@
+@import url(./__nav/menu__nav.css);
+@import url(./__nav-link/menu__nav-link.css);
+@import url(./__nav-link/_is-active/menu__nav-link_is-active_active.css);
+@import url(./__close-button/menu__close-button.css);
+@import url(./__nav-link/_value/menu__nav-link_value_account.css);
+@import url(./__account-image/menu__account-image.css);
+
+
+.menu {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    display: none;
+    grid-template-columns: 1fr minmax(200px, 520px);
+}

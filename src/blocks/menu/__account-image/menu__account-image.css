@@ -1,0 +1,13 @@
+.menu__nav-link_value_account:hover .menu__account-image {
+    opacity: .6;
+}
+
+.menu__account-image {
+    width: 12px;
+    height: 14px;
+
+    background-image: url(../../../images/account-image.png);
+    margin: 0 7px 0 0 ;
+
+    transition: opacity .3s linear;
+}

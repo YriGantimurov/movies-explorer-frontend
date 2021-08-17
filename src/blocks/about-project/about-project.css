@@ -1,0 +1,20 @@
+@import url(./__articles-container/about-project__articles-container.css);
+@import url(./__article-title/about-project__article-title.css);
+@import url(./__article-paragraph/about-project__article-paragraph.css);
+@import url(./__illustration-container/about-project__illustration-container.css);
+@import url(./__illustration-paragraph/about-project__illustration-paragraph.css);
+@import url(./__illustration-paragraph/_color/about-project__illustration-paragraph_color_black.css);
+@import url(./__illustration-paragraph/_color/about-project__illustration-paragraph_color_white.css);
+@import url(./__illustration-description/about-project__illustration-description.css);
+@import url(./__article/about-project__article.css);
+
+.about-project {
+    margin: 0;
+    padding: 0 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-project {
+        padding: 0 14px;
+    }
+}

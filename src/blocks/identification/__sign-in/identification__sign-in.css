@@ -1,0 +1,15 @@
+.identification__sign-in {
+    height: max-content;
+    margin: 0;
+    padding: 0;
+
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+
+    align-self: end;
+    position: relative;
+    bottom: 70px;
+
+    width: 100%;
+}
