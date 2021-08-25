@@ -12,7 +12,6 @@
 
     display: grid;
     grid-template-columns: 1fr minmax(200px, 600px) 1fr;
-    grid-template-rows: max-content max-content max-content;
-
-    height: calc(100vh - 75px);
+    grid-template-rows: max-content max-content ;
+    height: calc(100vh - 100px);
 }

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
-function NavMenu() {
-    const location = useLocation();
+function NavMenu(props) {
     const handleContextMenu = () => {
         const menu = document.querySelector('.menu')
         menu.setAttribute('class', 'menu menu_display_grid')
@@ -13,12 +12,12 @@ function NavMenu() {
         setWidth(window.innerWidth)
     })
 
-    if (width < 769 && location.pathname !== "/") return (
+    if (width < 769 && props.loggedIn) return (
         <nav className="header__menu">
             <button onClick={() => handleContextMenu()} className="header__menu-button header__menu-button_value_context-menu"></button>
         </nav>)
     return (
-        (location.pathname === "/")
+        (!props.loggedIn)
             ? <nav className="header__menu">
                 <Link className="header__menu-button" to="/signup">Регистрация</Link>
                 <Link className="header__menu-button header__menu-button_value_signin-button" to="/signin">Войти</Link>
