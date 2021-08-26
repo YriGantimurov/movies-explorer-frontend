@@ -7,6 +7,8 @@
 @import url(./__checkbox-container/search-form__checkbox-container.css);
 @import url(./__checkbox/_position/search-form__checkbox_position_on.css);
 @import url(./__checkbox-container/_position/search-form__checkbox-container_position_on.css);
+@import url(./__error-message/search-form__error-message.css);
+@import url(./__error-message/_type/search-form__error-message_type_error.css);
 
 .search-form {
     margin: 80px 0 0;

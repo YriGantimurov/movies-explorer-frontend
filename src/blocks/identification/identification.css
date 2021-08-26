@@ -10,6 +10,7 @@
 @import url(./__input/_type/identification__input_type_error.css);
 @import url(./__error-message/identification__error-massage.css);
 @import url(./__error-message/_type/identification__error-massage_type_error.css);
+@import url(./__submit-button/_type/identification__submit-button_type_disable.css);
 
 .identification {
     height: 100vh;

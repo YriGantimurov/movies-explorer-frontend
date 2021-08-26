@@ -115,7 +115,7 @@ class MainApi {
     }
 }
 
-const api = new MainApi({ baseUrl: 'api.movie.explorer.nomoredomains.club',
+const api = new MainApi({ baseUrl: 'https://api.movie.explorer.nomoredomains.club',
 headers: {
     authorization: `Bearer ${localStorage.getItem('token')}`,
 }

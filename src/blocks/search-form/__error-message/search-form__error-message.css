@@ -1,0 +1,14 @@
+.search-form__error-message {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    color: #ee3465;
+    margin: 10px 0 0 10px;
+
+    visibility: hidden;
+}
