@@ -82,7 +82,7 @@ function App() {
         setUserEmail(userData.data.email)
         onLogin(profile)
       })
-      .catch((err) => {console.log(err); setRegisterServerError(true)})
+      .catch((err) => {setRegisterServerError(true)})
   }
 
   const onLogin = (profile) => {
@@ -97,7 +97,6 @@ function App() {
 
   const onLogout = () => {
     localStorage.removeItem('token')
-    console.log(localStorage.getItem('token'))
     history.push('/')
     setLoggedIn(false)
   }

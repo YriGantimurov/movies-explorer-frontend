@@ -1,6 +1,5 @@
 class MainApi {
     constructor(options) {
-        this._key = options.headers.authorization;
         this._url = options.baseUrl
     }
 
@@ -15,7 +14,7 @@ class MainApi {
         return fetch(`${this._url}/signup`, {
             method: 'POST',
             headers: {
-                authorization: this._key,
+                authorization: `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -31,7 +30,7 @@ class MainApi {
         return fetch(`${this._url}/signin`, {
             method: 'POST',
             headers: {
-                authorization: this._key,
+                authorization: `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -46,7 +45,7 @@ class MainApi {
         return fetch(`${this._url}/users/me`, {
             method: 'GET',
             headers: {
-                authorization: this._key,
+                authorization: `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             },
         })
@@ -57,7 +56,7 @@ class MainApi {
         return fetch(`${this._url}/users/me`, {
             method: 'PATCH',
             headers: {
-                "Authorization": this._key,
+                "Authorization": `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -72,7 +71,7 @@ class MainApi {
         return fetch(`${this._url}/movies`, {
             method: 'POST',
             headers: {
-                "Authorization": this._key,
+                "Authorization": `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -96,7 +95,7 @@ class MainApi {
         return fetch(`${this._url}/movies/${cardId}`, {
             method: 'DELETE',
             headers: {
-                "Authorization": this._key,
+                "Authorization": `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             }
         })
@@ -107,7 +106,7 @@ class MainApi {
         return fetch(`${this._url}/movies`, {
             method: 'GET',
             headers: {
-                "Authorization": this._key,
+                "Authorization": `Bearer ${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
             }
         })
@@ -115,10 +114,6 @@ class MainApi {
     }
 }
 
-const api = new MainApi({ baseUrl: 'https://api.movie.explorer.nomoredomains.club',
-headers: {
-    authorization: `Bearer ${localStorage.getItem('token')}`,
-}
-})
+const api = new MainApi({ baseUrl: 'https://api.movie.explorer.nomoredomains.club'})
 
 export default api
