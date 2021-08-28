@@ -23,13 +23,16 @@ function SearchForm(props) {
     }, [props.serverError])
 
     const handleSubmit = (e) => {
-        e.preventDefault()
+        if(e) e.preventDefault();
         if(searchValue === '') {setErrorMessage('Нужно ввести ключевое слово'); setIsErrorOn(true); return};
         props.onSearch(searchValue, isThumblerOn)
     }
 
     const handleThumblerToggle = () => {
         setIsThumblerOn(!isThumblerOn)
+
+        if(searchValue === '') {setErrorMessage('Нужно ввести ключевое слово'); setIsErrorOn(true); return};
+        props.onSearch(searchValue, !isThumblerOn)
     }
 
     const handleChangeValue = (e) => {

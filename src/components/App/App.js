@@ -58,10 +58,20 @@ function App() {
     setLoginServerError(false)
     setLoginError(false)
     setIsCardsLoaded(false)
+
     MoviesApi.getInitialCards()
       .then(cards => { setCards(cards); setIsCardsLoaded(true) })
       .catch(setServerError)
-  }, [])
+
+
+    if(JSON.parse(localStorage.getItem('cards')) !== null) {
+      var cards = []
+      cards = JSON.parse(localStorage.getItem('cards'))
+      setIsCardsLoaded(true)
+      setSearchedCards(cards)
+      setCardsLength(cards.length)
+    }
+  }, [loggedIn])
 
   const renderSavedCards = (Id) => {
     MainApi.getSavedCards()
@@ -99,6 +109,10 @@ function App() {
     localStorage.removeItem('token')
     history.push('/')
     setLoggedIn(false)
+    setSearchedCards([])
+    setSavedCards([])
+    setCardsLength(1)
+    localStorage.removeItem('cards')
   }
 
   const onEditProfile = (info) => {
@@ -112,6 +126,7 @@ function App() {
       return (card.nameRU.indexOf(searchValue) !== -1) && (isCheckboxOn ? (card.duration <= 40 ? true: false) : true)
     })
     setSearchedCards(renderedCards)
+    localStorage.setItem('cards', JSON.stringify(renderedCards));
     setCardsLength(renderedCards.length)
   }
 

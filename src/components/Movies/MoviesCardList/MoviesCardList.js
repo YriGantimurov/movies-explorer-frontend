@@ -14,14 +14,14 @@ function MoviesCardList(props) {
     }, [])
 
     const _columnsCount = () => {
-        if (window.innerWidth < 964) return 1;
-        if (window.innerWidth < 1388) return 2;
-        else return 3;
+        const columnsCount = Math.floor((window.innerWidth - 140)/400)
+        return columnsCount === 0
+        ? 1
+        : columnsCount
     }
 
     const handleMoreButton = () => {
-        if (_columnsCount() < 3) setElementsCounnt(elementsCount + 2)
-        else setElementsCounnt(elementsCount + 3)
+        setElementsCounnt(elementsCount + _columnsCount())
     }
 
     return (
