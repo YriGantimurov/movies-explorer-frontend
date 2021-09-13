@@ -2,7 +2,7 @@ import logoImg from '../../../images/logo.png';
 import Navigation from '../Navigation/Navigation';
 import { useHistory, useLocation } from 'react-router-dom';
 
-function Header() {
+function Header(props) {
     const location = useLocation();
     const history = useHistory();
 
@@ -10,7 +10,7 @@ function Header() {
     return (
         <header className="header">
             <img className="header__logo" alt="Логотип сайта на шапке" src={logoImg} onClick={()=>{history.push('/')}}/>
-            <Navigation />
+            <Navigation loggedIn={props.loggedIn} />
         </header>
     )
 }

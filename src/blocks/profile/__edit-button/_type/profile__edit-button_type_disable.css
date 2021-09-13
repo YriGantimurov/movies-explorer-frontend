@@ -1,0 +1,9 @@
+
+.profile__edit-button_type_disable {
+    color: #333;
+    cursor: default;
+}
+
+.profile__edit-button_type_disable:hover {
+    opacity: 1;
+}

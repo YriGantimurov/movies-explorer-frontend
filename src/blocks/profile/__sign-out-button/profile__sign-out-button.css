@@ -6,9 +6,12 @@
     line-height: 16px;
     letter-spacing: 0px;
     text-align: center;
+
+    cursor: pointer;
     
     color: #ee3465;
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
 
     margin: 0;
     padding: 0;
