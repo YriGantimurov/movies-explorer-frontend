@@ -114,6 +114,6 @@ class MainApi {
     }
 }
 
-const api = new MainApi({ baseUrl: 'https://api.movie.explorer.nomoredomains.club'})
+const api = new MainApi({ baseUrl: process.env.REACT_APP_API_ADRESS || 'http://localhost:3001'})
 
 export default api

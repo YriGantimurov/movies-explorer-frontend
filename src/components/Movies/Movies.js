@@ -3,6 +3,7 @@ import MoviesCardList from "./MoviesCardList/MoviesCardList";
 import Preloader from './Preloader/Preloader'
 
 function Movies(props) {
+    // console.log(props.cards)
     return (
         <>
             <SearchForm serverError={props.serverError} cardsLength={props.cardsLength} onSearch={props.onSearch} />

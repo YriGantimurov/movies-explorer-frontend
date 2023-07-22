@@ -66,6 +66,7 @@ function App() {
 
     if(JSON.parse(localStorage.getItem('cards')) !== null) {
       var cards = []
+      console.log(cards)
       cards = JSON.parse(localStorage.getItem('cards'))
       setIsCardsLoaded(true)
       setSearchedCards(cards)
@@ -123,7 +124,9 @@ function App() {
   const onSearch = (searchValue, isCheckboxOn) => {
     setSearchedCards([])
     const renderedCards = cards.filter(card => {
-      return (card.nameRU.indexOf(searchValue) !== -1) && (isCheckboxOn ? (card.duration <= 40 ? true: false) : true)
+      return (card.nameRU.indexOf(searchValue) !== -1) && (isCheckboxOn ? 
+        (card.duration <= 40 ? true: false) 
+        : true)
     })
     setSearchedCards(renderedCards)
     localStorage.setItem('cards', JSON.stringify(renderedCards));
